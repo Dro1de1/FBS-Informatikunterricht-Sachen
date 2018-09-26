@@ -1,0 +1,58 @@
+body{
+	margin-left: 2cm;
+	margin-right:2cm;
+}
+p {
+	background-color: lightgrey;
+	border-bottom-style: solid;
+	border-right-style: solid;
+	border-bottom-color: red;
+	border-right-color: green;
+}
+h1{
+	font-weight: bolder;
+	color: green;
+}
+h2{
+	font-style: italic;
+	color: red;	
+}
+table{
+	border-style: none;
+}
+td{
+	border-style: none; 	
+}
+a{
+	color: green;
+}
+
+
+cite{	color:green; }
+
+dfn {	font-family: arial,
+ 		helvetica, sans-serif; }
+.webseite {
+	width: 975px;
+	height: 640px;
+}
+.kopf {
+	width: 975px;
+	height: 100px;
+}
+.menue {
+	width: 180px;
+	height: 460px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.inhalt {
+	width: 790px;
+	height: 460px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.fuss {
+	width: 975px;
+	height: 70px;
+}

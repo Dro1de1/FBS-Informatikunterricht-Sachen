@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="aussehen.css" type="text/css" rel="stylesheet" />
+<meta charset="utf-8" />
+<title>Ristorante Bella Italia</title>
+<script language="javascript">
+        var verschoben = 0
+        var navbarVerschieben = () => {
+                console.log("started");
+                if (verschoben==0) {
+                        document.getElementById("navbar").style.left="0px";
+                        verschoben=1;
+                        document.getElementById("navbarmover").innerHTML="Navigationsmenü verschwinden lassen";
+                        document.getElementById("navbarmoverBG").style.right="0px";
+                        console.log("sichtbar gemacht");
+                }
+                else if (verschoben==1) {
+                        document.getElementById("navbar").style.left="-170px";
+                        verschoben=0; 
+                        document.getElementById("navbarmoverBG").style.right="-100vw";
+                        document.getElementById("navbarmover").innerHTML="Navigationsmenü sichtbar machen";
+                        console.log("unsichtbar gemacht");
+                }
+                else {
+                        console.log("error");
+                }
+                console.log(document.getElementById("navbar").style);
+                console.log(document.getElementById("navbarmoverBG").style);
+        }
+</script>
+</head>
+<body>
+        <!--<div class="everything">-->
+                <div class="header">
+                        <h1 class="title">Ristorante Bella Italia - Ihre Pizzeria in Lübeck</h1>
+                </div><!--header-->
+                        <div class="navabar" id="navbar">
+                                <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Karte</a>
+                                                <ul>
+                                                        <li><a href="#">Vorspeisen</a></li>
+                                                        <li><a href="#">Salate</a></li>
+                                                        <li><a href="#">Pizza</a></li>
+                                                        <li><a href="#">Überbackenes</a></li>
+                                                        <li><a href="#">Teigwaren</a></li>
+                                                        <li><a href="#">Nudeln</a></li>
+                                                </ul>
+                                        </li>
+                                        <li><a href="#">Bestellformular</a></li>
+                                        <li><a href="#">Impressum</a></li>
+                                </ul>
+                        </div><!--navabar-->
+                        <div class="navabarmover" id="navbarmover" onclick="navbarVerschieben()">Navigationsmenü sichtbar machen</div>
+                        <div class="navabarmoverBG" id="navbarmoverBG" onclick="navbarVerschieben()"></div>
+                <div class="content">
+                        <iframe src="essen/menue_pizza.html" class="contentContainer">
+                                <p>Your browser does not support iframes.</p>
+                              </iframe>
+                </div><!--content-->
+                <div class="impressum"></div><!--impressum-->
+        <!--</div>--><!--everything-->
+</body>
+</html>
